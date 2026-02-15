@@ -1,0 +1,715 @@
+/* ===========================
+   Custom Properties
+   =========================== */
+:root {
+  --color-bg: #f1f5f9;
+  --color-bg-elevated: #ffffff;
+  --color-bg-dark: #0f172a;
+  --color-bg-mid: #e2e8f0;
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+  --color-text-inverse: #f1f5f9;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-border: #cbd5e1;
+  --color-shadow: rgba(15, 23, 42, 0.08);
+  --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --max-width: 1100px;
+  --radius: 8px;
+  --transition: 0.2s ease;
+}
+
+/* ===========================
+   Reset & Base
+   =========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: var(--font-stack);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ===========================
+   Utilities
+   =========================== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ===========================
+   Skip Link
+   =========================== */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--color-accent);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  z-index: 1000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ===========================
+   Header
+   =========================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.site-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.site-logo:hover {
+  color: var(--color-accent);
+}
+
+/* Nav */
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.25rem 0;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+/* Nav Toggle (mobile) */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===========================
+   Hero
+   =========================== */
+.hero {
+  padding: 3.5rem 0 3rem;
+  text-align: center;
+  background: var(--color-bg-dark);
+  color: var(--color-text-inverse);
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  line-height: 1.2;
+  max-width: 800px;
+  margin: 0 auto 0.75rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===========================
+   Buttons
+   =========================== */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  transition: background var(--transition), color var(--transition),
+    box-shadow var(--transition);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: #fff;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-secondary:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+/* Secondary button on dark backgrounds */
+.hero .btn-secondary,
+.contact .btn-secondary {
+  color: #fff;
+  border-color: #fff;
+}
+
+.hero .btn-secondary:hover,
+.contact .btn-secondary:hover {
+  background: #fff;
+  color: var(--color-bg-dark);
+}
+
+/* ===========================
+   Sections
+   =========================== */
+.case-studies,
+.businesses,
+.contact {
+  padding: 2.5rem 0;
+}
+
+.case-studies {
+  background: var(--color-bg);
+}
+
+.businesses {
+  background: var(--color-bg-elevated);
+}
+
+.contact {
+  background: var(--color-bg-dark);
+  color: var(--color-text-inverse);
+  text-align: center;
+}
+
+section h2 {
+  font-size: clamp(1.4rem, 3vw, 1.85rem);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.case-studies h2,
+.contact h2 {
+  text-align: center;
+}
+
+/* ===========================
+   Card Grid
+   =========================== */
+.card-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px var(--color-shadow);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  margin-bottom: 0.5rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.card .btn {
+  margin-top: 0.5rem;
+}
+
+.card-label {
+  font-weight: 700;
+  color: var(--color-text);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.card-header-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.card-header-row h3 {
+  margin-bottom: 0;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+/* ===========================
+   Contact
+   =========================== */
+.contact h2 {
+  color: #fff;
+}
+
+.contact p {
+  color: #94a3b8;
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+.site-footer {
+  background: var(--color-bg-dark);
+  border-top: 1px solid #1e293b;
+  padding: 1.25rem 0;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.site-footer a {
+  color: #94a3b8;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* ===========================
+   Responsive — Tablet (768px+)
+   =========================== */
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .case-studies .card {
+    display: grid;
+    grid-row: span 7;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+  }
+
+  .case-studies .card h3 {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+
+  .case-studies .card p {
+    margin-bottom: 0;
+  }
+
+  .case-studies .card .card-label {
+    margin-bottom: 0;
+    padding-top: 0.25rem;
+  }
+
+  .card-grid--two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===========================
+   Responsive — Desktop (1024px+)
+   =========================== */
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Subgrid: align case study card internals across columns.
+     Each card has 7 children (h3, label, p, label, p, label, p).
+     Cards span 7 rows and use subgrid to share row sizing. */
+  .case-studies .card {
+    display: grid;
+    grid-row: span 7;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+  }
+
+  .case-studies .card h3 {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+
+  .case-studies .card p {
+    margin-bottom: 0;
+  }
+
+  .case-studies .card .card-label {
+    margin-bottom: 0;
+    padding-top: 0.25rem;
+  }
+
+  .card-grid--two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===========================
+   Resume Page
+   =========================== */
+.resume-page {
+  padding: 2.5rem 0 3rem;
+  background: var(--color-bg-elevated);
+}
+
+.resume-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.resume-header h1 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 0.2rem;
+}
+
+.resume-title {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.15rem;
+}
+
+.resume-location {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.resume-page section {
+  margin-bottom: 1.75rem;
+}
+
+.resume-page section:last-of-type {
+  margin-bottom: 0;
+}
+
+.resume-page h2 {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.resume-page > .container > section > p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.resume-skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.skill-group h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.skill-group p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.resume-entry {
+  margin-bottom: 1.25rem;
+}
+
+.resume-entry:last-child {
+  margin-bottom: 0;
+}
+
+.resume-entry-header {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.resume-entry-header h3 {
+  font-size: 1.05rem;
+}
+
+.resume-meta {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.resume-entry p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .resume-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .resume-skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===========================
+   Privacy Page
+   =========================== */
+.privacy-page {
+  padding: 2.5rem 0 3rem;
+  background: var(--color-bg-elevated);
+}
+
+.privacy-page h1 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 0.5rem;
+}
+
+.privacy-updated {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.privacy-page h2 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.privacy-page p {
+  margin-bottom: 0.75rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.privacy-page ul {
+  margin: 0 0 0.75rem 1.5rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.privacy-page li {
+  margin-bottom: 0.25rem;
+}
+
+/* ===========================
+   Responsive — Mobile (<768px)
+   =========================== */
+@media (max-width: 767px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .primary-nav {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background: var(--color-bg-elevated);
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem 1.25rem;
+    box-shadow: 0 4px 12px var(--color-shadow);
+  }
+
+  .primary-nav.is-open {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .nav-list li:last-child .nav-link {
+    border-bottom: none;
+  }
+
+  .hero {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .case-studies,
+  .businesses,
+  .contact {
+    padding: 2rem 0;
+  }
+}

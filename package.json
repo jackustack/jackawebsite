@@ -1,0 +1,10 @@
+{
+  "name": "jackatyler.com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Jack Tyler — Data Architect & Systems Integrator",
+  "scripts": {
+    "dev": "npx serve .",
+    "lint": "npx html-validate index.html privacy.html"
+  }
+}
