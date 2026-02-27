@@ -641,6 +641,207 @@ section h2 {
 }
 
 /* ===========================
+   Services Page
+   =========================== */
+.services-section {
+  padding: 2.5rem 0;
+  background: var(--color-bg);
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card p:last-of-type {
+  margin-bottom: 0.75rem;
+}
+
+.service-card .btn {
+  margin-top: auto;
+}
+
+.service-card-price {
+  color: var(--color-text) !important;
+  font-size: 1.05rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.service-card-price strong {
+  font-size: 1.3rem;
+  color: var(--color-accent);
+}
+
+.service-card-price span {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* Social Proof */
+.social-proof {
+  padding: 1.25rem 0;
+  background: var(--color-bg-mid);
+  text-align: center;
+}
+
+.social-proof-text {
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+/* Service Details */
+.service-details {
+  padding: 2.5rem 0;
+  background: var(--color-bg-elevated);
+}
+
+.service-details h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.service-detail {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.service-detail-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: var(--color-bg-elevated);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-stack);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: left;
+  gap: 1rem;
+}
+
+.service-detail-toggle:hover {
+  background: var(--color-bg);
+}
+
+.service-detail-toggle .chevron {
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+.service-detail-toggle[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+.service-detail-content {
+  padding: 0 1.25rem 1.25rem;
+}
+
+.service-detail-content h3 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.service-detail-content h3:first-child {
+  margin-top: 0;
+}
+
+.service-detail-content p {
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-bottom: 0.5rem;
+}
+
+.service-detail-cta {
+  margin-top: 1rem;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 2.5rem 0;
+  background: var(--color-bg);
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.faq-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-stack);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: left;
+  gap: 1rem;
+}
+
+.faq-toggle:hover {
+  color: var(--color-accent);
+}
+
+.faq-toggle .chevron {
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+.faq-toggle[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 0 1rem;
+}
+
+.faq-answer p {
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+/* Hero consulting pitch (homepage) */
+.hero-consulting-pitch {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
+
+.hero-consulting-pitch a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.hero-consulting-pitch a:hover {
+  color: var(--color-accent);
+}
+
+/* ===========================
    Responsive — Mobile (<768px)
    =========================== */
 @media (max-width: 767px) {

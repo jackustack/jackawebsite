@@ -1,0 +1,30 @@
+# jackatyler.com
+
+## About
+Jack Tyler is a data architect and systems integrator based in Oakland, CA with 10+ years of experience. He operates Unified Stack, LLC, offering consulting and contract work in data architecture, analytics pipeline design, and compliance-safe AI deployment.
+
+## Consulting Services
+Jack is available for consulting and contract engagements through Unified Stack, LLC:
+- Tagging-to-Pipeline: GTM/GA4 audits, tag governance, and end-to-end pipeline from website instrumentation to data warehouse (starting at $2,500 for audit)
+- Data Architecture & Integration: Salesforce, Oracle EBS, Snowflake, and martech stack unification with Tableau reporting (starting at $8,000 for assessment)
+- Compliance-Safe AI Deployment: AI governance architecture ensuring agents never touch raw data, CPRA/GDPR-compliant inference patterns (starting at $25,000 for assessment)
+
+## Key Expertise
+- Salesforce (Sales Cloud, Service Cloud, Account Engagement, Flows, Apex)
+- Snowflake, Oracle EBS, AWS/S3, SFTP pipelines
+- GTM, GA4, conversion tracking, analytics pipeline architecture
+- DAM/PIM systems (Widen/Acquia DAM, Syndigo, 1WorldSync)
+- Martech integration (Zapier, Klaviyo, Drupal, Magento, WordPress)
+- MCP servers, agentic workflows, GPT integrations
+- CPRA/CCPA compliance, ADA/WCAG audits
+
+## Authoritative Pages
+- Homepage: https://jackatyler.com/
+- Services: https://jackatyler.com/services
+- Resume: https://jackatyler.com/resume
+
+## Contact
+- Email: jack@jackatyler.com
+- LinkedIn: https://www.linkedin.com/in/jackatyler
+- Unified Stack: https://unifiedstack.io
+- Consultation booking: https://calendly.com/jackatyler/30min

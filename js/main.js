@@ -46,4 +46,23 @@
       nav.classList.remove("is-open");
     }
   });
+
+  // Accordion toggle for FAQ and service detail sections
+  function initAccordion(toggleSelector, contentSelector) {
+    document.querySelectorAll(toggleSelector).forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var expanded = btn.getAttribute("aria-expanded") === "true";
+        var content = btn.nextElementSibling;
+        btn.setAttribute("aria-expanded", String(!expanded));
+        if (expanded) {
+          content.setAttribute("hidden", "");
+        } else {
+          content.removeAttribute("hidden");
+        }
+      });
+    });
+  }
+
+  initAccordion(".faq-toggle");
+  initAccordion(".service-detail-toggle");
 })();
