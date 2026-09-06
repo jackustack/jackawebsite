@@ -1,232 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jack Tyler — Data architect and systems integrator based in Oakland, CA. Consulting for GTM/GA4 tagging pipelines, Salesforce + Snowflake integration, Oracle EBS, martech stack unification, and compliance-safe AI deployment. 10+ years experience.">
-  <meta name="theme-color" content="#1a1a2e">
-  <meta name="robots" content="index, follow">
-  <title>Jack Tyler — Data Architect &amp; Systems Integrator</title>
-  <link rel="canonical" href="https://jackatyler.com/">
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jackatyler.com/">
-  <meta property="og:title" content="Jack Tyler — Data Architect &amp; Systems Integrator">
-  <meta property="og:description" content="Consulting for GTM/GA4 tagging pipelines, Salesforce + Snowflake integration, and compliance-safe AI deployment. Based in Oakland, CA.">
-  <meta property="og:image" content="https://jackatyler.com/assets/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Jack Tyler — Data Architect &amp; Systems Integrator">
-  <meta name="twitter:description" content="Consulting for GTM/GA4 tagging pipelines, Salesforce + Snowflake integration, and compliance-safe AI deployment.">
-  <meta name="twitter:image" content="https://jackatyler.com/assets/og-image.png">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/css/style.css">
-  <!-- Structured Data: Person -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Jack Tyler",
-    "url": "https://jackatyler.com",
-    "jobTitle": "Data Architect & Systems Integrator",
-    "description": "Data architect and consultant specializing in Salesforce + Snowflake integration, GTM/GA4 tagging pipelines, Oracle EBS, martech stack unification, and compliance-safe AI deployment.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Oakland",
-      "addressRegion": "CA",
-      "addressCountry": "US"
-    },
-    "email": "jack@jackatyler.com",
-    "sameAs": [
-      "https://www.linkedin.com/in/jackatyler",
-      "https://x.com/jackatyler"
-    ],
-    "knowsAbout": [
-      "Salesforce Architecture",
-      "Snowflake Data Warehousing",
-      "Oracle EBS Integration",
-      "Google Tag Manager",
-      "Google Analytics 4",
-      "Data Pipeline Engineering",
-      "ETL/ELT",
-      "Martech Stack Integration",
-      "DAM/PIM Systems",
-      "MCP Servers",
-      "Agent-Orchestrated Workflows",
-      "CCPA/CPRA Compliance",
-      "ADA/WCAG Compliance",
-      "Python",
-      "SQL",
-      "Tableau"
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Unified Stack, LLC",
-      "url": "https://unifiedstack.io"
-    }
-  }
-  </script>
-  <!-- Structured Data: ProfessionalService -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Jack Tyler Consulting",
-    "url": "https://jackatyler.com/services",
-    "description": "Data architecture consulting, GTM/GA4 tagging-to-pipeline builds, Salesforce + Snowflake integration, and compliance-safe AI deployment.",
-    "provider": {
-      "@type": "Person",
-      "name": "Jack Tyler"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "United States"
-    },
-    "serviceType": [
-      "GTM/GA4 Tagging & Analytics Pipeline Consulting",
-      "Salesforce + Snowflake Data Architecture",
-      "Compliance-Safe AI Deployment",
-      "Martech Stack Integration",
-      "Data Quality & Integrity Consulting"
-    ],
-    "priceRange": "$$"
-  }
-  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Business-focused help with data quality, website measurement, accessibility, privacy, and digital strategy.">
+  <title>Jack Tyler | Data, Measurement & Digital Strategy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="/" class="site-logo" aria-label="Jack Tyler — Home">Jack Tyler</a>
-      <button
-        type="button"
-        class="nav-toggle"
-        aria-expanded="false"
-        aria-controls="primary-nav"
-        aria-label="Open menu"
-      >
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
-          <li><a href="/services" class="nav-link">Services</a></li>
-          <li><a href="#businesses" class="nav-link">Businesses</a></li>
-          <li><a href="/resume" class="nav-link">Resume</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <a class="site-name" href="index.html" aria-label="Jack Tyler home">Jack Tyler</a>
+
+    <nav aria-label="Primary navigation">
+      <a href="services.html">Services</a>
+      <!-- <a href="#strategy">Strategy</a> -->
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <form class="site-search" role="search" action="search.html" method="get">
+      <label class="visually-hidden" for="site-search">Search this website</label>
+      <input id="site-search" name="q" type="search" placeholder="Search" required>
+      <button type="submit">Search</button>
+    </form>
   </header>
 
-  <main id="main">
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="container">
-        <h1 id="hero-heading" tabindex="0">I build the systems that connect your data to decisions.</h1>
-        <p class="hero-sub">Data architect &amp; systems integrator. 10+ years turning messy data into reliable pipelines.</p>
-        <div class="hero-ctas">
-          <a href="#case-studies" class="btn btn-primary">See My Work</a>
-          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+  <main id="main-content" tabindex="-1">
+    <div class="above-fold">
+      <section id="top" aria-labelledby="page-title">
+        <div class=""top-content">
+          <h1 id="page-title">Solve the data, measurement, and digital problems that get in the way of better decisions.</h1>
+          <!--Ignore paragraph for now
+          <p>Specific help when business information cannot be trusted, digital performance cannot be measured, or website risk needs attention.</p>
+          -->
         </div>
-        <p class="hero-consulting-pitch">Available for consulting &mdash; GTM/GA4 tagging, Salesforce + Snowflake integration, and compliance-safe AI. <a href="/services">View services</a></p>
-      </div>
+
+        <div class="hero-image">
+          <img src="assets/analytics_workspace_from_insight_to_impact.png" alt="Analytics, reporting, data quality, and accessibility analysis workspace">
+        </div>
+
+      </section>
+        
+
+      <section id="services" aria-labelledby="services-title">
+        <h2 id="services-title">Services and pricing</h2>
+
+        <section aria-labelledby="data-title">
+          <h3 id="data-title"><a href="services.html#service-data-quality">Data Quality</a></h3>
+          <p class="service-value">Trust the data behind your reporting and decisions.</p>
+          <p>Cleanup, normalization, CRM data quality, validation, and migration preparation.</p>
+          <p><strong>From $450.</strong></p>
+        </section>
+
+        <section aria-labelledby="tracking-title">
+          <h3 id="tracking-title"><a href="services.html#service-measurement">Website Tracking &amp; Measurement</a></h3>
+          <p class="service-value">Know what is working and what is not.</p>
+          <p>GA4, Google Tag Manager, conversion tracking, measurement issues, and strategy.</p>
+          <p><strong>From $450. Audits from $1,250.</strong></p>
+        </section>
+
+        <section aria-labelledby="accessibility-title">
+          <h3 id="accessibility-title"><a href="services.html#service-accessibility">Website Accessibility &amp; Privacy</a></h3>
+          <p class="service-value">Reduce digital risk while improving the experience for users.</p>
+          <p>Accessibility reviews, consent and tracking reviews, remediation planning, and implementation support.</p>
+          <p><strong>Assessments from $950.</strong></p>
+        </section>
+      </section>
+    </div>
+
+    <!--Removed for now
+    <section id="business-questions" aria-labelledby="business-questions-title">
+      <h2 id="business-questions-title">Need help answering these business questions?:</h2>
+      <ul class="business-questions-list">
+        <li>Why are my Google Analytics reports a lot different from the reports in Marketing Cloud?</li>
+        <li>Why isn't the data being collected through Google Analytics even though we have set up the tags and triggers correctly?</li>
+        <li>Why doesn't our data show correct conversions count?</li>
+        <li>What can we do to make our website meet minimum accessibility standards?</li>
+      </ul>
     </section>
+    -->
 
-    <section id="case-studies" class="case-studies" aria-labelledby="cs-heading">
-      <div class="container">
-        <h2 id="cs-heading" tabindex="0">Case Studies</h2>
-        <div class="card-grid">
-
-          <article class="card">
-            <h3 tabindex="0">AI-Powered DAM Administration</h3>
-            <p class="card-label">Challenge</p>
-            <p>8,000+ digital assets, 50+ users, and no dedicated DAM administrator. Asset requests, metadata updates, and governance were bottlenecked on one person handling it as a side task.</p>
-            <p class="card-label">What I Built</p>
-            <p>A GPT-powered integration for DAM administration&mdash;natural-language asset search, automated metadata tagging suggestions, and guided workflows for non-technical users.</p>
-            <p class="card-label">Impact</p>
-            <p>Eliminated the admin bottleneck entirely. Users self-serve asset requests. Metadata quality improved with AI-assisted tagging. Zero dedicated headcount required.</p>
-          </article>
-
-          <article class="card">
-            <h3 tabindex="0">Oracle EBS to Salesforce to Snowflake to Tableau</h3>
-            <p class="card-label">Challenge</p>
-            <p>Revenue operations data was siloed across Oracle EBS (finance), Salesforce (CRM), and disconnected reporting tools. Executives couldn't get a unified view without manual spreadsheet merges.</p>
-            <p class="card-label">What I Built</p>
-            <p>End-to-end data pipeline: Oracle EBS and Salesforce into Snowflake, with Tableau as the presentation layer. 125+ executive dashboards, 35+ self-service reports.</p>
-            <p class="card-label">Impact</p>
-            <p>Single source of truth for RevOps. Executives went from waiting days for ad-hoc reports to real-time self-service. Eliminated manual data reconciliation across finance and sales.</p>
-          </article>
-
-          <article class="card">
-            <h3 tabindex="0">Google MCP Server &amp; Custom MCPs</h3>
-            <p class="card-label">Challenge</p>
-            <p>Integrations between marketing platforms, compliance tools, and internal systems required manual configuration, slow debugging, and constant maintenance.</p>
-            <p class="card-label">What I Built</p>
-            <p>A Google MCP server and custom Model Context Protocol servers for agent-orchestrated integrations&mdash;real-time website diagnostics, compliance flagging, and faster system connections.</p>
-            <p class="card-label">Impact</p>
-            <p>Reduced integration setup time dramatically. Real-time diagnostics replaced manual audits. Compliance checks run continuously instead of quarterly.</p>
-          </article>
-
-        </div>
+    <section class="strategy-contact">
+      <div class="strategy-block">
+        <h2>Strategy</h2>
+          <p>I help organizations decide what needs to change, what should be prioritized, and how data, technology, vendors, and processes should work together.</p>
+          <p><a href="services.html">View strategy and ongoing services</a></p>
       </div>
-    </section>
 
-    <section id="businesses" class="businesses" aria-labelledby="biz-heading">
-      <div class="container">
-        <h2 id="biz-heading" tabindex="0">Businesses</h2>
-        <div class="card-grid">
-
-          <article class="card">
-            <h3>Unified Stack</h3>
-            <p>Data architecture consulting and local business SEO, performance, and compliance optimization. From Salesforce pipelines to website tagging&mdash;connecting systems so data flows correctly.</p>
-            <a href="https://unifiedstack.io" class="btn btn-primary" rel="noopener">Visit unifiedstack.io</a>
-          </article>
-
-          <article class="card">
-            <h3>On The Block Digital</h3>
-            <p>Local business SEO, website performance, and digital growth for restaurants, dentists, law firms, home services, and retail in Oakland and the Bay Area. Helping Main Street businesses get found, get more calls, and bring more people through the door.</p>
-            <a href="https://ontheblockdigital.com" class="btn btn-primary" rel="noopener">Visit ontheblockdigital.com</a>
-          </article>
-
-          <article class="card">
-            <div class="card-header-row">
-              <h3>DAM/PIM Monitor</h3>
-              <span class="badge">Coming Soon</span>
-            </div>
-            <p>Cross-system monitoring and alerting for product content operations. Detects drift between DAM and PIM systems and surfaces actionable issues before they cause chargebacks, compliance failures, or lost sales.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <h2 id="contact-heading" tabindex="0">Get In Touch</h2>
-        <p>Interested in working together? Reach out directly.</p>
-        <div class="contact-links">
-          <a href="mailto:jack@jackatyler.com" class="btn btn-primary">Email Me</a>
-          <a href="https://www.linkedin.com/in/jackatyler" class="btn btn-secondary" rel="noopener" target="_blank">LinkedIn<span class="sr-only"> (opens in new tab)</span></a>
-          <a href="https://calendar.app.google/HLRG6sSkhMSEZvbBA" class="btn btn-secondary" rel="noopener" target="_blank">Book a Free Consultation<span class="sr-only"> (opens in new tab)</span></a>
-        </div>
+      <div class="problem-block">
+        <h2>Have a business problem?</h2>
+          <p>Tell me what is happening and what you are trying to accomplish.</p>
+          <address><a href="mailto:YOUR-EMAIL-HERE">Contact Jack</a>
+          </address>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; 2026 Jack Tyler. All rights reserved.</p>
-      <a href="/privacy">Privacy Policy</a>
-    </div>
+  <footer>
+    <p>&copy; 2026 Jack Tyler. Operated through Unified Stack.</p>
   </footer>
-
-  <script src="/js/main.js"></script>
 </body>
 </html>

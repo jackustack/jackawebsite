@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search jackatyler.com.">
+  <title>Search | Jack Tyler</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="search.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <a class="site-name" href="index.html" aria-label="Jack Tyler home">Jack Tyler</a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#strategy">Strategy</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section id="top" aria-labelledby="page-title">
+      <h1 id="page-title">Search</h1>
+      <form id="search-form" class="search-page-form" role="search">
+        <label for="search-query">Search this website</label>
+        <div>
+          <input id="search-query" name="q" type="search" required autocomplete="off">
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </section>
+
+    <section aria-labelledby="results-title">
+      <h2 id="results-title">Results</h2>
+      <p id="search-status" aria-live="polite">Enter a search term.</p>
+      <ol id="search-results" class="search-results"></ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jack Tyler. Operated through Unified Stack.</p>
+  </footer>
+</body>
+</html>
