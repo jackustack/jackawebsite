@@ -11,8 +11,8 @@ html {
 }
 
 :root {
-  /* --top-background: #c6e2f2; */
   --top-blue-start: #d8edf8;
+  --top-blue-middle: #c9e3f1;
   --top-blue-end: #b7d8eb;
 }
 
@@ -22,9 +22,9 @@ body {
   line-height: 1.5;
   background: linear-gradient(
     to bottom,
-    #d8edf8 0%,
-    #c9e3f1 45%,
-    #b7d8eb 100%
+    var(--top-blue-start) 0%,
+    var(--top-blue-middle) 45%,
+    var(--top-blue-end) 100%
 
   );
 }
@@ -114,6 +114,7 @@ main > section {
 
 .above-fold {
   min-height: calc(82vh - 90px);
+  min-height: calc(82svh - 90px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -137,7 +138,6 @@ main > section {
 }
 
 #top .hero-image {
-  flex: 1 1 40%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -177,7 +177,7 @@ header,
 main,
 footer {
   width: 94%;
-  max-width: 1800px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -187,18 +187,18 @@ ul,
 ol {
   max-width: 900px;
 }
-
+/*
 #top p {
   margin: 0;
   max-width: 1050px;
   font-size: 1.06rem;
 }
-
+*/
 .service-value {
   margin-top: 0;
   font-weight: bold;
 }
-
+/*
 #business-questions {
   padding-top: 42px;
   padding-bottom: 42px;
@@ -222,7 +222,7 @@ ol {
   flex: 1 1 320px;
   margin: 0;
 }
-
+*/
 #services {
   margin-top: auto;
   padding-top: 28px;
@@ -309,13 +309,13 @@ footer {
 footer p {
   margin: 0;
 }
-
+/*
 #services,
 #services > h2,
 #services > section {
   text-align: left;
 }
-
+*/
 .strategy-contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -338,6 +338,150 @@ footer p {
   margin-top: 0;
 }
 
+/* Contact page */
+
+.contact-heading {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.contact-heading h1 {
+  max-width: 1000px;
+  margin-bottom: 14px;
+}
+
+.contact-heading p {
+  max-width: 760px;
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.contact-layout {
+  display: block;
+  padding-top: 48px;
+  padding-bottom: 72px;
+}
+
+.contact-copy {
+  max-width: 900px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.contact-copy h2 {
+  margin-top: 0;
+}
+
+.contact-copy p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field {
+  min-width: 0;
+}
+
+.form-field-wide,
+.form-actions {
+  grid-column: 1 / -1;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #555;
+  background: #fff;
+  color: #111;
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+  outline: 3px solid #111;
+  outline-offset: 3px;
+}
+
+.form-help {
+  margin: 7px 0 0;
+  max-width: 760px;
+  font-size: 0.92rem;
+}
+
+.form-actions {
+  margin-top: 4px;
+}
+
+.form-actions button {
+  padding: 11px 18px;
+  font-weight: bold;
+}
+
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-heading {
+    padding-top: 42px;
+    padding-bottom: 26px;
+  }
+
+  .contact-layout {
+    padding-top: 30px;
+    padding-bottom: 48px;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-field-wide,
+  .form-actions {
+    grid-column: 1;
+  }
+}
 
 
 @media (max-width: 1000px) {
@@ -366,7 +510,7 @@ footer p {
 }
 
 @media (max-width: 640px) {
-
+/*
   .business-questions-list {
     display: block;
   }
@@ -374,11 +518,7 @@ footer p {
   .business-questions-list li + li {
     margin-top: 10px;
   }
-  body {
-    width: auto;
-    margin: 0 18px;
-  }
-
+*/
   header {
     flex-direction: column;
   }
@@ -393,6 +533,13 @@ footer p {
     min-width: 0;
     width: 100%;
   }
+
+  header,
+  main,
+  footer {
+    width: calc(100% - 36px);
+  }
+
 }
 
 @media (max-width: 900px) {
@@ -401,8 +548,13 @@ footer p {
     align-items: flex-start;
   }
 
+  #top .top-content,
   #top .hero-image {
     width: 100%;
+    justify-content: flex-start;
+  }
+
+  #top .hero-image {
     justify-content: flex-start;
   }
 
