@@ -298,6 +298,25 @@ export default async function handler(req, res) {
       });
     }
 
+    const allowedHostnames = new Set([
+      'jackatyler.com',
+      'www.jackatyler.com'
+    ]);
+
+    if (
+      !turnstile.hostname ||
+      !allowedHostnames.has(turnstile.hostname)
+    ) {
+      console.warn(
+        'Unexpected Turnstile hostname:',
+        turnstile.hostname
+      );
+
+      return res.status(403).json({
+        error: 'Verification failed.'
+      });
+    }
+
     await insertSubmission({
       name,
       email,
