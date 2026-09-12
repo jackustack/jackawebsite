@@ -187,42 +187,12 @@ ul,
 ol {
   max-width: 900px;
 }
-/*
-#top p {
-  margin: 0;
-  max-width: 1050px;
-  font-size: 1.06rem;
-}
-*/
+
 .service-value {
   margin-top: 0;
   font-weight: bold;
 }
-/*
-#business-questions {
-  padding-top: 42px;
-  padding-bottom: 42px;
-}
 
-#business-questions h2 {
-  margin-bottom: 10px;
-}
-
-.business-questions-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 28px;
-  max-width: none;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.business-questions-list li {
-  flex: 1 1 320px;
-  margin: 0;
-}
-*/
 #services {
   margin-top: auto;
   padding-top: 28px;
@@ -309,13 +279,7 @@ footer {
 footer p {
   margin: 0;
 }
-/*
-#services,
-#services > h2,
-#services > section {
-  text-align: left;
-}
-*/
+
 .strategy-contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -337,8 +301,6 @@ footer p {
 .strategy-contact p {
   margin-top: 0;
 }
-
-/* Contact page */
 
 .contact-heading {
   max-width: 900px;
@@ -455,6 +417,37 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 
+.page-intro-summary {
+  margin: 0;
+}
+
+.services-intro-cta {
+  flex: 0 0 auto;
+  max-width: none;
+  margin: 0;
+}
+
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 12px 20px;
+  border: 2px solid #111;
+  border-radius: 4px;
+  background: #111;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cta-link:hover {
+  background: #fff;
+  color: #111;
+}
+
 @media (max-width: 900px) {
   .contact-layout {
     grid-template-columns: 1fr;
@@ -510,15 +503,7 @@ textarea:focus-visible {
 }
 
 @media (max-width: 640px) {
-/*
-  .business-questions-list {
-    display: block;
-  }
 
-  .business-questions-list li + li {
-    margin-top: 10px;
-  }
-*/
   header {
     flex-direction: column;
   }
