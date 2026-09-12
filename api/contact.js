@@ -334,7 +334,7 @@ export default async function handler(req, res) {
       status: 'new'
     });
 
-    return redirectSuccess(res);
+    return respondSuccess(res);
   } catch (error) {
     if (error.message === 'BODY_TOO_LARGE') {
       return res.status(413).json({
