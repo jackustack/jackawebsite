@@ -194,6 +194,64 @@ async function insertSubmission(submission) {
   }
 }
 
+async function sendLeadNotification(submission) {
+  const apiKey = process.env.RESEND_API_KEY;
+  const notificationEmail =
+    process.env.LEAD_NOTIFICATION_EMAIL;
+  const fromEmail =
+    process.env.LEAD_NOTIFICATION_FROM;
+
+  if (!apiKey || !notificationEmail || !fromEmail) {
+    throw new Error(
+      'Lead notification environment variables are not configured.'
+    );
+  }
+
+  const response = await fetch(
+    'https://api.resend.com/emails',
+    {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        from: fromEmail,
+        to: [notificationEmail],
+        subject: `New website lead from ${submission.name}`,
+        reply_to: submission.email,
+        text: [
+          `Name: ${submission.name}`,
+          `Email: ${submission.email}`,
+          `Organization: ${
+            submission.organization || 'Not provided'
+          }`,
+          `Website: ${
+            submission.website || 'Not provided'
+          }`,
+          '',
+          'Business problem:',
+          submission.problem
+        ].join('\n')
+      })
+    }
+  );
+
+  if (!response.ok) {
+    const detail = await response.text();
+
+    console.error(
+      'Lead notification failed:',
+      response.status,
+      detail.slice(0, 500)
+    );
+
+    throw new Error(
+      'Could not send lead notification.'
+    );
+  }
+}
+
 function respondSuccess(req, res) {
   const accept = String(req.headers.accept || '');
 
@@ -325,16 +383,27 @@ export default async function handler(req, res) {
       });
     }
 
-    await insertSubmission({
-      name,
-      email,
-      organization: organization || null,
-      website,
-      problem,
-      status: 'new'
-    });
+    const submission = {
+  name,
+  email,
+  organization: organization || null,
+  website,
+  problem,
+  status: 'new'
+};
 
-    return respondSuccess(req, res);
+await insertSubmission(submission);
+
+try {
+  await sendLeadNotification(submission);
+} catch (notificationError) {
+  console.error(
+    'Submission saved but lead notification failed:',
+    notificationError
+  );
+}
+
+return respondSuccess(req, res);
   } catch (error) {
     if (error.message === 'BODY_TOO_LARGE') {
       return res.status(413).json({
