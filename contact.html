@@ -1,44 +1,40 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MJGWZRKZ');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MJGWZRKZ');</script>
   <!-- End Google Tag Manager -->
 
   <meta charset="utf-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Contact Jack Tyler</title>
 
-  <meta
-    name="description"
-    content="Contact Jack Tyler about a business problem involving data, measurement, reporting, accessibility, digital systems, or strategy."
-  >
+  <meta name="description"
+    content="Contact Jack Tyler about a business problem involving data, measurement, reporting, accessibility, digital systems, or strategy.">
 
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Cloudflare Turnstile -->
-  <script
-    src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-    async
-    defer>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer>
   </script>
 </head>
 
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJGWZRKZ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJGWZRKZ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <a class="skip-link" href="#main-content">
@@ -56,25 +52,12 @@
       <a href="contact.html" aria-current="page">Contact</a>
     </nav>
 
-    <form
-      class="site-search"
-      role="search"
-      action="search.html"
-      method="get"
-    >
-      <label
-        class="visually-hidden"
-        for="header-search"
-      >
+    <form class="site-search" role="search" action="search.html" method="get">
+      <label class="visually-hidden" for="header-search">
         Search this website
       </label>
 
-      <input
-        id="header-search"
-        type="search"
-        name="q"
-        placeholder="Search"
-      >
+      <input id="header-search" type="search" name="q" placeholder="Search">
 
       <button type="submit">
         Search
@@ -85,10 +68,7 @@
 
   <main id="main-content">
 
-    <section
-      class="contact-intro"
-      aria-labelledby="contact-title"
-    >
+    <section class="contact-intro" aria-labelledby="contact-title">
 
       <h1 id="contact-title">
         Have a business problem?
@@ -101,20 +81,13 @@
 
     </section>
 
-    <section
-      class="contact-form-section"
-      aria-labelledby="contact-form-title"
-    >
+    <section class="contact-form-section" aria-labelledby="contact-form-title">
 
       <h2 id="contact-form-title">
         Contact Jack
       </h2>
 
-      <form
-        class="contact-form"
-        action="/api/contact"
-        method="post"
-      >
+      <form id="contact-form" class="contact-form" action="/api/contact" method="post">
 
         <div class="form-field">
 
@@ -123,14 +96,7 @@
             <span aria-hidden="true">*</span>
           </label>
 
-          <input
-            id="name"
-            name="name"
-            type="text"
-            maxlength="150"
-            autocomplete="name"
-            required
-          >
+          <input id="name" name="name" type="text" maxlength="150" autocomplete="name" required>
 
         </div>
 
@@ -141,14 +107,7 @@
             <span aria-hidden="true">*</span>
           </label>
 
-          <input
-            id="email"
-            name="email"
-            type="email"
-            maxlength="254"
-            autocomplete="email"
-            required
-          >
+          <input id="email" name="email" type="email" maxlength="254" autocomplete="email" required>
 
         </div>
 
@@ -158,13 +117,7 @@
             Organization
           </label>
 
-          <input
-            id="organization"
-            name="organization"
-            type="text"
-            maxlength="200"
-            autocomplete="organization"
-          >
+          <input id="organization" name="organization" type="text" maxlength="200" autocomplete="organization">
 
         </div>
 
@@ -174,14 +127,7 @@
             Website
           </label>
 
-          <input
-            id="website"
-            name="website"
-            type="url"
-            maxlength="500"
-            autocomplete="url"
-            placeholder="https://"
-          >
+          <input id="website" name="website" type="url" maxlength="500" autocomplete="url" placeholder="https://">
 
         </div>
 
@@ -192,20 +138,10 @@
             <span aria-hidden="true">*</span>
           </label>
 
-          <textarea
-            id="problem"
-            name="problem"
-            rows="8"
-            minlength="20"
-            maxlength="3000"
-            aria-describedby="problem-help"
-            required
-          ></textarea>
+          <textarea id="problem" name="problem" rows="8" minlength="20" maxlength="3000" aria-describedby="problem-help"
+            required></textarea>
 
-          <p
-            id="problem-help"
-            class="form-help"
-          >
+          <p id="problem-help" class="form-help">
             Describe what is happening, what you expected to happen,
             and what outcome you are trying to achieve.
           </p>
@@ -218,22 +154,13 @@
           if this contains a value.
         -->
 
-        <div
-          class="honeypot"
-          aria-hidden="true"
-        >
+        <div class="honeypot" aria-hidden="true">
 
           <label for="company-site">
             Leave this field blank
           </label>
 
-          <input
-            id="company-site"
-            name="company_site"
-            type="text"
-            tabindex="-1"
-            autocomplete="off"
-          >
+          <input id="company-site" name="company_site" type="text" tabindex="-1" autocomplete="off">
 
         </div>
 
@@ -247,11 +174,7 @@
             Do NOT put the Turnstile Secret Key here.
           -->
 
-          <div
-            class="cf-turnstile"
-            data-sitekey="0x4AAAAAAEpyEL5w81wkHXZu"
-            data-action="contact"
-          ></div>
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAEpyEL5w81wkHXZu" data-action="contact"></div>
 
         </div>
 
@@ -266,11 +189,13 @@
 
         <div class="form-actions form-field-wide">
 
-          <button type="submit">
+          <button id="contact-submit" type="submit">
             Send business problem
           </button>
 
         </div>
+
+        <div id="form-status" class="form-status form-field-wide" tabindex="-1" role="status" aria-live="polite"></div>
 
       </form>
 
@@ -284,5 +209,8 @@
     </p>
   </footer>
 
+  <script src="js/contact.js" defer></script>
+
 </body>
+
 </html>

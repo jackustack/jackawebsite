@@ -194,9 +194,17 @@ async function insertSubmission(submission) {
   }
 }
 
-function redirectSuccess(res) {
+function respondSuccess(req, res) {
+  const accept = String(req.headers.accept || '');
+
+  if (accept.includes('application/json')) {
+    return res.status(200).json({
+      success: true
+    });
+  }
+
   res.setHeader('Location', '/contact.html?sent=1');
-  res.status(303).end();
+  return res.status(303).end();
 }
 
 export default async function handler(req, res) {
@@ -222,7 +230,7 @@ export default async function handler(req, res) {
     const honeypot = cleanText(body.company_site, 250);
 
     if (honeypot) {
-      return redirectSuccess(res);
+      return respondSuccess(req, res);
     }
 
     const name = cleanText(body.name, 150);
