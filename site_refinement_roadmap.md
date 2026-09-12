@@ -367,7 +367,7 @@ Known follow-up:
 
 # P0 — Immediate Conversion Improvements
 
-## [ ] Move Services CTA higher on page
+## [X] Move Services CTA higher on page
 
 **Suggested branch:** `feat-services-cta`
 

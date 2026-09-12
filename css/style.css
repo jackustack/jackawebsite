@@ -358,6 +358,22 @@ footer p {
   grid-column: 1 / -1;
 }
 
+.form-status {
+  margin-top: 16px;
+}
+
+.form-status:not(:empty) {
+  padding: 12px 14px;
+  border: 2px solid #111;
+  background: #fff;
+  font-weight: bold;
+}
+
+.form-status:focus {
+  outline: 3px solid #111;
+  outline-offset: 3px;
+}
+
 .contact-form label {
   display: block;
   margin-bottom: 7px;
