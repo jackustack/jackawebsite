@@ -1,122 +1,409 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MJGWZRKZ');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MJGWZRKZ');
+  </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Business-focused services for data quality, website measurement, accessibility and privacy, Salesforce reporting, product and asset data, AI-enabled marketing operations, and digital strategy and operations.">
+
+  <meta name="description"
+    content="Business-focused consulting for CRM and data quality, marketing measurement and conversion tracking, website accessibility, Salesforce reporting, product and asset data, and fractional marketing and revenue operations.">
+
   <title>Services | Jack Tyler</title>
+
   <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJGWZRKZ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJGWZRKZ" height="0" width="0"
+      style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header>
-    <a class="site-name" href="index.html" aria-label="Jack Tyler home">Jack Tyler</a>
-    <nav aria-label="Primary navigation">
-      <!-- <a href="index.html">Home</a> -->
+  <header class="site-header">
+
+    <a class="site-name" href="index.html" aria-label="Jack Tyler home">
+      Jack Tyler
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
       <a href="services.html" aria-current="page">Services</a>
-      <!-- <a href="index.html#strategy">Strategy</a> -->
       <a href="contact.html">Contact</a>
     </nav>
+
     <form class="site-search" role="search" action="search.html" method="get">
-      <label class="visually-hidden" for="site-search">Search this website</label>
+      <label class="visually-hidden" for="site-search">
+        Search this website
+      </label>
+
       <input id="site-search" name="q" type="search" placeholder="Search" required>
-      <button type="submit">Search</button>
+
+      <button type="submit">
+        Search
+      </button>
     </form>
+
   </header>
 
   <main id="main-content" tabindex="-1">
-    <section id="top" aria-labelledby="page-title">
+
+    <section id="top" class="page-intro" aria-labelledby="page-title">
+
       <h1 id="page-title">Services</h1>
-      <p>Specific help for business problems involving data, measurement, reporting, websites, product information, AI-enabled workflows, and digital operations.</p>
+
+      <p>
+        Specific help for business problems involving data, measurement,
+        reporting, accessibility, product information, and ongoing marketing
+        and revenue operations.
+      </p>
+
     </section>
 
     <section class="service-list" aria-labelledby="core-services-title">
+
       <h2 id="core-services-title">Core services</h2>
 
-      <section id="service-data-quality" aria-labelledby="service-data-quality-title">
-        <div>
-          <h3 id="service-data-quality-title">Data Quality</h3>
-          <p class="service-value">Trust the data behind your reporting and decisions.</p>
+      <section id="service-data-quality" class="service-item" aria-labelledby="service-data-quality-title">
+
+        <div class="service-heading">
+          <h3 id="service-data-quality-title">
+            CRM &amp; Business Data Quality
+          </h3>
+
+          <p class="service-value">
+            Make the information your teams rely on more trustworthy.
+          </p>
         </div>
-        <p>Duplicate and inconsistent data cleanup, standardization, normalization, CRM data quality, import preparation, validation, and identification of upstream sources of bad data.</p>
-        <p><strong>Small projects from $450. Assessments from $950.</strong></p>
+
+        <p class="service-description">
+          Duplicate and inconsistent data, standardization, normalization,
+          import preparation, validation, conflicting sources, and identification
+          of upstream sources of unreliable data.
+        </p>
+
+        <p class="service-pricing">
+          <strong>
+            Quick fixes from $450. Assessments from $950.
+          </strong>
+        </p>
+
       </section>
 
-      <section id="service-measurement" aria-labelledby="service-measurement-title">
-        <div>
-          <h3 id="service-measurement-title">Website Tracking &amp; Measurement</h3>
-          <p class="service-value">Know what is working and what is not.</p>
+      <section id="service-measurement" class="service-item" aria-labelledby="service-measurement-title">
+
+        <div class="service-heading">
+          <h3 id="service-measurement-title">
+            Marketing Measurement &amp; Conversion Tracking
+          </h3>
+
+          <p class="service-value">
+            Know whether your marketing measurement is working--and why the numbers don't agree when it isn't.
+          </p>
         </div>
-        <p>GA4, Google Tag Manager, conversion tracking, events, data layers, campaign measurement, measurement discrepancies, and technical website issues that affect analytics.</p>
-        <p><strong>Quick fixes from $450. Audits from $1,250.</strong></p>
+
+        <p class="service-description">
+          GA4, Google Tag Manager, conversion tracking, consent-aware measurement,
+          data layers, and measurement discrepancies.
+        </p>
+
+        <p class="service-pricing">
+          <strong>
+            Quick fixes from $450. Measurement audits from $1,250.
+          </strong>
+        </p>
+
       </section>
 
-      <section id="service-accessibility" aria-labelledby="service-accessibility-title">
-        <div>
-          <h3 id="service-accessibility-title">Website Accessibility &amp; Privacy</h3>
-          <p class="service-value">Reduce digital risk while improving the experience for users.</p>
+      <section id="service-accessibility" class="service-item" aria-labelledby="service-accessibility-title">
+
+        <div class="service-heading">
+          <h3 id="service-accessibility-title">
+            Website Accessibility Assessment &amp; Remediation
+          </h3>
+
+          <p class="service-value">
+            Reduce exposure to common accessibility problems before they become
+            larger problems.
+          </p>
         </div>
-        <p>Accessibility reviews, remediation planning, cookie and tracking reviews, consent configuration, privacy-related tag behavior, and technical implementation support for identified issues.</p>
-        <p><strong>Assessments from $950.</strong></p>
+
+        <div class="service-content">
+
+          <p class="service-description">
+            Focused accessibility review, keyboard testing, common accessibility
+            barriers, remediation, retesting, and implementation support for
+            identified issues.
+          </p>
+
+          <p class="service-pricing">
+            <strong>
+              Accessibility Essentials from $950.</strong>
+            <br><small>
+              This is not a comprehensive WCAG conformance audit, legal certification,
+              or guarantee against a complaint or lawsuit. For comprehensive WCAG audits, formal documentation, or
+              larger
+              remediation projects, I can coordinate work with specialist
+              accessibility partners that I have vetted.</small>
+
+          </p>
+
+          <p class="service-note">
+          </p>
+
+        </div>
+
       </section>
 
-      <section id="service-salesforce" aria-labelledby="service-salesforce-title">
-        <div>
-          <h3 id="service-salesforce-title">Salesforce Reporting</h3>
-          <p class="service-value">Give teams the information they need without fighting Salesforce.</p>
+      <section id="service-salesforce" class="service-item" aria-labelledby="service-salesforce-title">
+
+        <div class="service-heading">
+          <h3 id="service-salesforce-title">
+            Salesforce Reporting
+          </h3>
+
+          <p class="service-value">
+            Give teams the information they need without fighting Salesforce.
+          </p>
         </div>
-        <p>Reports, dashboards, filters, formulas, report types, reporting discrepancies, and underlying data issues that prevent teams from getting useful business information.</p>
-        <p><strong>Quick fixes from $450. Larger reporting projects from $950.</strong></p>
+
+        <p class="service-description">
+          Reports, dashboards, filters, formulas, report types, reporting
+          discrepancies, and underlying data issues that prevent teams from
+          getting useful business information.
+        </p>
+
+        <p class="service-pricing">
+          <strong>
+            Quick fixes from $450. Larger reporting projects from $950.
+          </strong>
+        </p>
+
       </section>
 
-      <section id="service-product-data" aria-labelledby="service-product-data-title">
-        <div>
-          <h3 id="service-product-data-title">Product &amp; Asset Data</h3>
-          <p class="service-value">Keep product information and digital assets accurate wherever customers need them.</p>
+      <section id="service-product-data" class="service-item" aria-labelledby="service-product-data-title">
+
+        <div class="service-heading">
+          <h3 id="service-product-data-title">
+            Product &amp; Asset Data
+          </h3>
+
+          <p class="service-value">
+            Keep product information and digital assets accurate wherever
+            customers need them.
+          </p>
         </div>
-        <p>DAM and PIM issues, product information, syndication, digital assets, metadata, workflow problems, and inconsistencies between systems or channels.</p>
-        <p><strong>Assessments from $950.</strong></p>
+
+        <p class="service-description">
+          DAM and PIM issues, product information, syndication, digital assets,
+          metadata, workflow problems, and inconsistencies between systems
+          or channels.
+        </p>
+
+        <p class="service-pricing">
+          <strong>
+            Assessments from $950.
+          </strong>
+        </p>
+
       </section>
+
     </section>
 
     <section class="service-list" aria-labelledby="additional-services-title">
-      <h2 id="additional-services-title">Strategy and ongoing support</h2>
 
-      <section id="service-fractional" aria-labelledby="service-fractional-title">
-        <div>
-          <h3 id="service-fractional-title">Fractional Marketing &amp; Revenue Operations</h3>
-          <p class="service-value">Get ongoing ownership of digital priorities without adding another full-time role.</p>
+      <h2 id="additional-services-title">
+        Strategy and ongoing support
+      </h2>
+
+      <section id="service-fractional" class="service-item" aria-labelledby="service-fractional-title">
+
+        <div class="service-heading">
+          <h3 id="service-fractional-title">
+            Fractional Marketing &amp; Revenue Operations
+          </h3>
+
+          <p class="service-value">
+            Get ongoing ownership of digital priorities without adding another
+            full-time role.
+          </p>
         </div>
-        <p>Ongoing help with CRM, analytics, measurement, reporting, marketing systems, workflows, vendors, and cross-functional operational problems.</p>
-        <p><strong>Starting at $2,000 per month.</strong></p>
+
+        <p class="service-description">
+          Ongoing help with CRM, analytics, measurement, reporting, marketing
+          systems, workflows, vendors, and cross-functional operational problems.
+        </p>
+
+        <p class="service-pricing">
+          <strong>
+            Starting at $2,000 per month.
+          </strong>
+        </p>
+
       </section>
+
     </section>
 
-    <section id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Not sure which service fits?</h2>
-      <p>Describe the business problem, what it is affecting, and what you need to accomplish. You do not need to diagnose the technical cause first.</p>
-      <address><a href="mailto:jack@jackatyler.com">jack@jackatyler.com</a></address>
+    <section id="how-i-work" class="how-i-work" aria-labelledby="how-i-work-title">
+
+      <div class="how-i-work-intro">
+
+        <h2 id="how-i-work-title">
+          How I Work
+        </h2>
+
+        <p>
+          Good consulting should make the problem clearer, not make you more
+          dependent on the consultant. I start by understanding the business
+          problem and how the work actually gets done before recommending
+          changes to systems, data, or processes.
+        </p>
+
+      </div>
+
+      <div class="how-i-work-principles">
+
+        <section class="how-i-work-item" aria-labelledby="clear-scope-title">
+
+          <h3 id="clear-scope-title">
+            Clear scope before the work begins
+          </h3>
+
+          <p>
+            You should know what I am reviewing, what is included, what is not
+            included, and what you will receive before work starts. If the scope
+            needs to change, we discuss that before additional work is added.
+          </p>
+
+        </section>
+
+        <section class="how-i-work-item" aria-labelledby="standalone-assessments-title">
+
+          <h3 id="standalone-assessments-title">
+            Assessments stand on their own
+          </h3>
+
+          <p>
+            An assessment should be useful even if you do not hire me to implement
+            the recommendations. Findings are intended to help you understand what
+            is wrong, why it matters, and what should be addressed first.
+          </p>
+
+          <p>
+            You can use the findings yourself, work with another provider, or ask
+            me to help implement them.
+          </p>
+
+        </section>
+
+        <section class="how-i-work-item" aria-labelledby="understand-process-title">
+
+          <h3 id="understand-process-title">
+            Understand the process before changing the system
+          </h3>
+
+          <p>
+            Workarounds often exist for a reason. If people are correcting reports,
+            maintaining spreadsheets, or working around a system, I want to
+            understand what they know before recommending that the workaround be
+            removed or automated.
+          </p>
+
+        </section>
+
+        <section class="how-i-work-item" aria-labelledby="keep-knowledge-title">
+
+          <h3 id="keep-knowledge-title">
+            Your team keeps the knowledge
+          </h3>
+
+          <p>
+            Documentation, findings, and recommendations are yours. When I make
+            changes, the goal is for your team to understand what changed, why it
+            changed, and how to work with it after the project ends.
+          </p>
+
+        </section>
+
+        <section class="how-i-work-item how-i-work-item-wide" aria-labelledby="no-unnecessary-project-title">
+
+          <h3 id="no-unnecessary-project-title">
+            No project for the sake of a project
+          </h3>
+
+          <p>
+            Not every problem requires a rebuild, a new platform, or a larger
+            engagement. If something is working well enough, I will say so. If a
+            smaller fix is the appropriate solution, that is what I will recommend.
+          </p>
+
+        </section>
+
+      </div>
+
+      <!--
+      Add once the About / How I Work page exists.
+
+      <p class="how-i-work-link">
+        <a href="about.html">
+          Learn more about how I work and what to expect when we work together.
+        </a>
+      </p>
+      -->
+
     </section>
+
+    <section id="contact" class="contact-cta" aria-labelledby="contact-title">
+
+      <h2 id="contact-title">
+        Not sure which service fits?
+      </h2>
+
+      <p>
+        Describe the business problem, what it is affecting, and what you need to
+        accomplish. You do not need to diagnose the technical cause first.
+      </p>
+
+      <address class="contact-address">
+        <a href="contact.html">Contact me</a>
+      </address>
+
+    </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2026 Jack Tyler. Operated through Unified Stack.</p>
+  <footer class="site-footer">
+    <p>
+      &copy; 2026 Jack Tyler. Operated through Unified Stack.
+    </p>
   </footer>
+
 </body>
+
 </html>
