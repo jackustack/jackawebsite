@@ -3,7 +3,7 @@ const submitButton = document.getElementById('contact-submit');
 const formStatus = document.getElementById('form-status');
 
 if (!contactForm || !submitButton || !formStatus) {
-    throw new Error('Contact form elements not found.');
+  throw new Error('Contact form elements not found.');
 }
 
 const defaultButtonText = submitButton.textContent.trim();
@@ -60,6 +60,12 @@ contactForm.addEventListener('submit', async (event) => {
         'Your message could not be sent. Please try again.'
       );
     }
+
+    window.dataLayer = window.dataLayer || [];
+
+    window.dataLayer.push({
+      event: 'contact_form_submit'
+    });
 
     /*
       At this point the server has confirmed success.
