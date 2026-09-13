@@ -387,7 +387,7 @@ Preferred direction:
 
 ---
 
-## [ ] Improve contact-form success state
+## [X] Improve contact-form success state
 
 **Suggested branch:** `feat-contact-success-state`
 
@@ -405,7 +405,7 @@ After successful form submission:
 
 ---
 
-## [ ] Add lead notifications
+## [X] Add lead notifications
 
 **Suggested branch:** `feat-contact-notifications`
 
@@ -425,7 +425,7 @@ Notification failure must not make a successful customer submission appear to ha
 
 ---
 
-## [ ] Add contact conversion tracking
+## [X] Add contact conversion tracking
 
 **Suggested branch:** `feat-contact-analytics`
 
