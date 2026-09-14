@@ -1,47 +1,28 @@
-# Jack Tyler — Data Architect, Systems Integrator, Consultant
+# Jack Tyler / Unified Stack
 
-## About
-Jack Tyler is a data architect and systems integrator based in Oakland, CA.
-Founder of Unified Stack, LLC. 10+ years building enterprise data systems.
-Specializes in Salesforce architecture, Snowflake data warehousing, Oracle EBS integration,
-GTM/GA4 tagging pipelines, martech stack unification, DAM/PIM operations,
-and compliance-safe AI deployment using MCP servers and agent-orchestrated workflows.
+> Jack Tyler is a consultant operating through Unified Stack who helps organizations solve business problems involving data, measurement, reporting, accessibility, product information, AI-enabled workflows, and digital systems.
 
-Available for consulting and contract work.
+Jack Tyler is the consultant. Unified Stack is the consulting business through which he operates.
 
-## Authoritative Pages
-- https://jackatyler.com/ — Personal brand site, case studies, credentials
-- https://jackatyler.com/services — Consulting services: tagging-to-pipeline, data architecture, compliance-safe AI
-- https://jackatyler.com/resume — Professional experience and skills
-- https://unifiedstack.io — Unified Stack, LLC: consulting practice and local business SEO
+The work focuses on understanding the business problem and the processes behind it before recommending changes. Services range from focused fixes and assessments to larger projects and ongoing fractional support.
 
-## Case Studies
-- AI-Powered DAM Administration: Built a GPT-powered integration for a DAM with 8,000+ assets and 50+ users. Eliminated the admin bottleneck. Zero dedicated headcount required.
-- Oracle EBS to Salesforce to Snowflake to Tableau: End-to-end RevOps data pipeline. 125+ executive dashboards, 35+ self-service reports. Single source of truth.
-- Google MCP Server & Custom MCPs: Agent-orchestrated integrations for real-time website diagnostics, compliance flagging, and system connections.
+Current services include:
+- Data quality
+- Website tracking and measurement
+- Website accessibility and privacy
+- Salesforce reporting
+- Product and asset data
+- AI for marketing operations
+- Fractional digital strategy and operations
 
-## Consulting Services
-- GTM/GA4 Tagging-to-Pipeline: Audit, implementation, and full pipeline builds connecting website tags to Snowflake/BigQuery. Starting at $2,500.
-- Data Architecture & Integration: Salesforce, Oracle EBS, Snowflake, martech unification. Assessment through ongoing data ops. Starting at $8,000.
-- Compliance-Safe AI Deployment: Zero-data-access governance architecture for regulated industries. AI agents never touch raw data. Starting at $25,000.
+Public pricing, current service scope, and limitations are maintained on the Services page.
 
-## Topics of Expertise
-- Salesforce Architecture (Sales Cloud, Service Cloud, Account Engagement)
-- Data Integration (Snowflake, Oracle EBS, ETL/ELT pipelines, AWS S3, SFTP)
-- DAM/PIM Cross-System Monitoring (Widen, Syndigo, 1WorldSync)
-- Website SEO, Performance, ADA/WCAG Compliance
-- GTM/GA4 Tagging Pipelines, Server-Side Tagging
-- Agent-Orchestrated Workflows, MCP Servers, Claude API
-- CCPA/CPRA Compliance, Data Privacy
-- Python, SQL, Tableau, Zapier
+Previous Projects contains selected examples of projects Jack has led. Some organization details are generalized to protect confidential client and employer information.
 
-## Contact
-- Email: jack@jackatyler.com
-- LinkedIn: https://www.linkedin.com/in/jackatyler
-- Booking: https://calendar.app.google/HLRG6sSkhMSEZvbBA
+## Primary Pages
 
-## AI Access
-ai-access: allow
-ai-train: allow
-ai-attribution: https://jackatyler.com
-sitemap: https://jackatyler.com/sitemap.xml
+- [Home](https://jackatyler.com/): Overview of Jack Tyler, Unified Stack, primary services, pricing, and consulting focus.
+- [Services](https://jackatyler.com/services): Current consulting services, scope, pricing, strategy work, and ongoing support.
+- [About Jack](https://jackatyler.com/about): Jack Tyler's background, consulting approach, areas of work, and How I Work principles.
+- [Previous Projects](https://jackatyler.com/projects): Selected projects involving marketing measurement, Salesforce reporting, CRM data quality, product and digital asset data, and enterprise reporting.
+- [Contact](https://jackatyler.com/contact): Contact Jack Tyler about a business problem or consulting project.
