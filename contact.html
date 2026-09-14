@@ -41,13 +41,13 @@
     Skip to main content
   </a>
 
-  <header>
+  <header class="site-header">
 
-    <a class="site-name" href="index.html">
+    <a class="site-name" href="index.html" aria-label="Jack Tyler home">
       Jack Tyler
     </a>
 
-    <nav aria-label="Primary navigation">
+    <nav class="primary-nav" aria-label="Primary navigation">
       <a href="services.html">Services</a>
       <a href="contact.html" aria-current="page">Contact</a>
       <a href="about.html">About Jack</a>
@@ -58,7 +58,7 @@
         Search this website
       </label>
 
-      <input id="header-search" type="search" name="q" placeholder="Search">
+      <input id="site-search" type="search" name="q" placeholder="Search" required>
 
       <button type="submit">
         Search
@@ -67,7 +67,7 @@
 
   </header>
 
-  <main id="main-content">
+  <main id="main-content" tab-index="-1">
 
     <section class="contact-intro" aria-labelledby="contact-title">
 
@@ -204,7 +204,7 @@
 
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>
       Jack Tyler operates through Unified Stack.
     </p>
