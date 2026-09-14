@@ -52,7 +52,7 @@ body {
   z-index: 1000;
 }
 
-header {
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,7 +67,7 @@ header {
   text-decoration: none;
 }
 
-nav {
+.primary-nav {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -169,9 +169,9 @@ h3 {
   font-size: 1.2rem;
 }
 
-header,
+.site-header,
 main,
-footer {
+.site-footer {
   width: 94%;
   max-width: 1400px;
   margin-left: auto;
@@ -269,11 +269,11 @@ address {
   margin: 4px 0 0;
 }
 
-footer {
+.site-footer {
   padding: 24px 0;
 }
 
-footer p {
+.site-footer p {
   margin: 0;
 }
 
@@ -624,7 +624,7 @@ textarea:focus-visible {
 
 
 @media (max-width: 1000px) {
-  header {
+  .site-header {
     align-items: flex-start;
     flex-wrap: wrap;
   }
@@ -650,7 +650,7 @@ textarea:focus-visible {
 
 @media (max-width: 640px) {
 
-  header {
+  .site-header {
     flex-direction: column;
   }
 
@@ -667,7 +667,7 @@ textarea:focus-visible {
 
   header,
   main,
-  footer {
+  .site-footer {
     width: calc(100% - 36px);
   }
 
