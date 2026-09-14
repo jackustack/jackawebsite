@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+  <channel>
+
+    <title>Jack Tyler Blog</title>
+
+    <link>https://jackatyler.com/blog/</link>
+
+    <description>
+      Articles from Jack Tyler about marketing measurement, data quality,
+      reporting, accessibility, and digital systems.
+    </description>
+
+    <language>en-us</language>
+
+  </channel>
+
+</rss>
