@@ -3,16 +3,20 @@
   <url>
     <loc>https://jackatyler.com/</loc>
   </url>
+
   <url>
-    <loc>https://jackatyler.com/services</loc>
+    <loc>https://jackatyler.com/services.html</loc>
   </url>
+
   <url>
-    <loc>https://jackatyler.com/contact</loc>
+    <loc>https://jackatyler.com/about.html</loc>
   </url>
+
   <url>
-    <loc>https://jackatyler.com/resume</loc>
+    <loc>https://jackatyler.com/contact.html</loc>
   </url>
+
   <url>
-    <loc>https://jackatyler.com/privacy</loc>
+    <loc>https://jackatyler.com/privacy.html</loc>
   </url>
 </urlset>
