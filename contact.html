@@ -4,14 +4,24 @@
 <head>
 
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MJGWZRKZ');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+
+    })(window, document, 'script', 'dataLayer', 'GTM-MJGWZRKZ');
+  </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="utf-8">
@@ -28,13 +38,17 @@
   <!-- Cloudflare Turnstile -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer>
   </script>
+
 </head>
 
-<body>
+<body class="contact-page">
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJGWZRKZ" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJGWZRKZ" height="0" width="0"
+      style="display:none;visibility:hidden" title="Google Tag Manager">
+    </iframe>
+  </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <a class="skip-link" href="#main-content">
@@ -55,7 +69,8 @@
     </nav>
 
     <form class="site-search" role="search" action="search.html" method="get">
-      <label class="visually-hidden" for="header-search">
+
+      <label class="visually-hidden" for="site-search">
         Search this website
       </label>
 
@@ -64,152 +79,212 @@
       <button type="submit">
         Search
       </button>
+
     </form>
 
   </header>
 
-  <main id="main-content" tab-index="-1">
 
-    <section class="contact-intro" aria-labelledby="contact-title">
+  <main id="main-content" tabindex="-1">
 
-      <h1 id="contact-title">
-        Have a business problem?
-      </h1>
+    <!-- Contact header -->
 
-      <p>
-        Tell me what is happening, what you expected to happen,
-        and what you are trying to accomplish.
-      </p>
+    <section class="contact-hero" aria-labelledby="contact-title">
+
+      <div class="contact-hero-inner">
+
+        <h1 id="contact-title">
+          Have a business problem?
+        </h1>
+
+        <p class="contact-hero-text">
+          Tell me what is happening, what you expected to happen,
+          and what you are trying to accomplish.
+        </p>
+
+      </div>
 
     </section>
 
-    <section class="contact-form-section" aria-labelledby="contact-form-title">
 
-      <h2 id="contact-form-title">
-        Contact Jack
-      </h2>
+    <!-- Contact form area -->
 
-      <form id="contact-form" class="contact-form" action="/api/contact" method="post">
+    <section class="contact-section" aria-labelledby="contact-form-title">
 
-        <div class="form-field">
+      <header class="contact-section-header">
 
-          <label for="name">
-            Name
-            <span aria-hidden="true">*</span>
-          </label>
+        <h2 id="contact-form-title">
+          Tell me what&rsquo;s going on
+        </h2>
 
-          <input id="name" name="name" type="text" maxlength="150" autocomplete="name" required>
+      </header>
 
-        </div>
 
-        <div class="form-field">
+      <div class="contact-layout">
 
-          <label for="email">
-            Email
-            <span aria-hidden="true">*</span>
-          </label>
+        <!-- Supporting information -->
 
-          <input id="email" name="email" type="email" maxlength="254" autocomplete="email" required>
+        <div class="contact-guidance">
 
-        </div>
-
-        <div class="form-field">
-
-          <label for="organization">
-            Organization
-          </label>
-
-          <input id="organization" name="organization" type="text" maxlength="200" autocomplete="organization">
-
-        </div>
-
-        <div class="form-field">
-
-          <label for="website">
-            Website
-          </label>
-
-          <input id="website" name="website" type="url" maxlength="500" autocomplete="url" placeholder="https://">
-
-        </div>
-
-        <div class="form-field form-field-wide">
-
-          <label for="problem">
-            What is your business problem?
-            <span aria-hidden="true">*</span>
-          </label>
-
-          <textarea id="problem" name="problem" rows="8" minlength="20" maxlength="3000" aria-describedby="problem-help"
-            required></textarea>
-
-          <p id="problem-help" class="form-help">
-            Describe what is happening, what you expected to happen,
-            and what outcome you are trying to achieve.
+          <p>
+            You do not need to know exactly what the solution is.
+            Start with the problem you are seeing.
           </p>
 
-        </div>
+          <p>
+            I can help determine whether the issue involves data,
+            measurement, reporting, accessibility, digital systems,
+            or another part of your technology stack.
+          </p>
 
-        <!--
-          Honeypot field.
-          Your Vercel function should reject submissions
-          if this contains a value.
-        -->
-
-        <div class="honeypot" aria-hidden="true">
-
-          <label for="company-site">
-            Leave this field blank
-          </label>
-
-          <input id="company-site" name="company_site" type="text" tabindex="-1" autocomplete="off">
-
-        </div>
-
-        <div class="form-field form-field-wide">
-
-          <!--
-            PUBLIC KEY:
-            Replace this value with your Cloudflare
-            Turnstile Site Key.
-
-            Do NOT put the Turnstile Secret Key here.
-          -->
-
-          <div class="cf-turnstile" data-sitekey="0x4AAAAAAEpyEL5w81wkHXZu" data-action="contact"></div>
-
-        </div>
-
-        <div class="form-field form-field-wide">
-
-          <p class="form-help">
-            Please do not submit passwords, customer records,
+          <p class="contact-guidance-note">
+            Please do not send passwords, customer records,
             confidential personal information, or other sensitive data.
           </p>
 
         </div>
 
-        <div class="form-actions form-field-wide">
 
-          <button id="contact-submit" type="submit">
-            Send business problem
-          </button>
+        <!-- Contact form -->
 
-        </div>
+        <form id="contact-form" class="contact-form" action="/api/contact" method="post">
 
-        <div id="form-status" class="form-status form-field-wide" tabindex="-1" role="status" aria-live="polite"></div>
 
-      </form>
+          <div class="form-field">
+
+            <label for="name">
+              Name
+              <span aria-hidden="true">*</span>
+            </label>
+
+            <input id="name" name="name" type="text" maxlength="150" autocomplete="name" required>
+
+          </div>
+
+
+          <div class="form-field">
+
+            <label for="email">
+              Email
+              <span aria-hidden="true">*</span>
+            </label>
+
+            <input id="email" name="email" type="email" maxlength="254" autocomplete="email" required>
+
+          </div>
+
+
+          <div class="form-field">
+
+            <label for="organization">
+              Organization
+            </label>
+
+            <input id="organization" name="organization" type="text" maxlength="200" autocomplete="organization">
+
+          </div>
+
+
+          <div class="form-field">
+
+            <label for="website">
+              Website
+            </label>
+
+            <input id="website" name="website" type="url" maxlength="500" autocomplete="url" placeholder="https://">
+
+          </div>
+
+
+          <div class="form-field form-field-wide">
+
+            <label for="problem">
+              What is your business problem?
+              <span aria-hidden="true">*</span>
+            </label>
+
+            <textarea id="problem" name="problem" rows="8" minlength="20" maxlength="3000"
+              aria-describedby="problem-help" required></textarea>
+
+            <p id="problem-help" class="form-help">
+              Describe what is happening, what you expected to happen,
+              and what outcome you are trying to achieve.
+            </p>
+
+          </div>
+
+
+          <!-- Honeypot -->
+
+          <div class="honeypot" aria-hidden="true">
+
+            <label for="company-site">
+              Leave this field blank
+            </label>
+
+            <input id="company-site" name="company_site" type="text" tabindex="-1" autocomplete="off">
+
+          </div>
+
+
+          <!-- Cloudflare Turnstile -->
+
+          <div class="form-field form-field-wide">
+
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEpyEL5w81wkHXZu" data-action="contact">
+            </div>
+
+          </div>
+
+
+          <div class="form-actions form-field-wide">
+
+            <button id="contact-submit" type="submit">
+              Send business problem
+            </button>
+
+          </div>
+
+
+          <div id="form-status" class="form-status" aria-live="polite" tabindex="-1" hidden></div>
+
+        </form>
+
+      </div>
 
     </section>
 
   </main>
 
+
   <footer class="site-footer">
-    <p>
-      Jack Tyler operates through Unified Stack.
-    </p>
-  </footer>
+
+  <p class="footer-copyright">
+    &copy; 2026 Jack Tyler. Operated through Unified Stack.
+  </p>
+
+  <nav class="footer-nav" aria-label="Footer navigation">
+
+    <ul class="footer-nav-column">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Jack</a></li>
+      <li><a href="previous-projects.html">Previous Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+
+    <ul class="footer-nav-column">
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="sitemap.html">Sitemap</a></li>
+    </ul>
+
+  </nav>
+
+</footer>
+
 
   <script src="js/contact-form.js" defer></script>
 

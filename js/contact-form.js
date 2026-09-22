@@ -27,6 +27,8 @@ contactForm.addEventListener('submit', async (event) => {
     'form-status-error'
   );
 
+  formStatus.hidden = true;
+
   try {
     const formData = new FormData(contactForm);
     const requestBody = new URLSearchParams();
@@ -79,6 +81,7 @@ contactForm.addEventListener('submit', async (event) => {
       'Thanks — your message was sent. I’ll review it and get back to you soon.';
 
     formStatus.classList.add('form-status-success');
+    formStatus.hidden = false;
     formStatus.focus();
 
     try {
@@ -103,6 +106,7 @@ contactForm.addEventListener('submit', async (event) => {
       'Your message could not be sent. Please try again.';
 
     formStatus.classList.add('form-status-error');
+    formStatus.hidden = false;
     formStatus.focus();
 
     try {
