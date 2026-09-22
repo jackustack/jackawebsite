@@ -35,12 +35,12 @@
 
 </head>
 
-<body>
+<body class="projects-page">
 
   <!-- Google Tag Manager (noscript) -->
   <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJGWZRKZ" height="0" width="0"
-      style="display:none;visibility:hidden">
+      style="display:none;visibility:hidden" title="Google Tag Manager">
     </iframe>
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
@@ -80,51 +80,76 @@
 
   <main id="main-content" tabindex="-1">
 
-    <section class="page-intro" aria-labelledby="projects-title">
+    <section class="projects-hero" aria-labelledby="projects-title">
 
-      <h1 id="projects-title">
-        Previous Projects
-      </h1>
+      <div class="projects-hero-title">
+        <h1 id="projects-title">
+          Previous Projects
+        </h1>
+      </div>
 
-      <p>
-        Examples of problems I have worked on involving measurement, reporting,
-        data quality, product information, and digital systems.
-      </p>
+      <div class="projects-hero-copy">
+        <p class="projects-hero-summary">
+          Examples of business, data, measurement, reporting, and digital
+          system problems I have worked on across organizations and teams.
+        </p>
 
-      <p>
-        Some organization details are generalized to protect confidential
-        client and employer information. The examples focus on the business
-        problem, the work performed, and what was delivered.
-      </p>
+        <p class="projects-hero-note">
+          Some organization details are generalized to protect confidential
+          client and employer information.
+        </p>
+      </div>
+
+    </section>
+
+    <section class="projects-intro" aria-labelledby="projects-intro-title">
+
+      <div class="projects-section-heading">
+        <h2 id="projects-intro-title">
+          Start with the problem
+        </h2>
+      </div>
+
+      <div class="projects-intro-copy">
+        <p class="projects-intro-lead">
+          The original request is not always the actual problem.
+        </p>
+
+        <p>
+          Many of these projects started as a request for a report, dashboard,
+          tracking change, migration, or system fix. The work often involved
+          understanding the process and data behind the request before changing
+          the technology.
+        </p>
+      </div>
 
     </section>
 
     <section class="project-list" aria-labelledby="selected-projects-title">
 
-      <h2 id="selected-projects-title">
-        Selected work
-      </h2>
+      <div class="projects-section-heading projects-list-heading">
+        <h2 id="selected-projects-title">
+          Selected projects
+        </h2>
+      </div>
 
       <!-- Marketing Measurement -->
 
       <article class="project-example">
 
-        <p class="project-year">
-          2026
-        </p>
+        <div class="project-meta">
+          <p class="project-year">2026</p>
 
-        <h3>
-          Marketing Measurement &amp; GTM Strategy
-        </h3>
+          <h3>
+            Marketing Measurement &amp; GTM Strategy
+          </h3>
+
+          <p class="project-organization">
+            Higher-education fundraising and nonprofit organization
+          </p>
+        </div>
 
         <dl class="project-details">
-
-          <div>
-            <dt>Organization type</dt>
-            <dd>
-              Higher-education fundraising and nonprofit organization
-            </dd>
-          </div>
 
           <div>
             <dt>Business problem</dt>
@@ -145,7 +170,7 @@
           </div>
 
           <div>
-            <dt>What I investigated</dt>
+            <dt>Investigation</dt>
             <dd>
               Google Analytics 4 properties, Google Tag Manager, existing
               tagging, campaign tracking, UTM usage, internal traffic,
@@ -173,8 +198,8 @@
             </dd>
           </div>
 
-          <div>
-            <dt>Technologies</dt>
+          <div class="project-systems">
+            <dt>Relevant systems</dt>
             <dd>
               Google Analytics 4, Google Tag Manager, campaign UTMs, web
               analytics, and marketing measurement systems
@@ -189,22 +214,19 @@
 
       <article class="project-example">
 
-        <p class="project-year">
-          2026
-        </p>
+        <div class="project-meta">
+          <p class="project-year">2026</p>
 
-        <h3>
-          Salesforce Reporting for Fundraising Teams
-        </h3>
+          <h3>
+            Salesforce Reporting for Fundraising Teams
+          </h3>
+
+          <p class="project-organization">
+            Higher-education fundraising organization
+          </p>
+        </div>
 
         <dl class="project-details">
-
-          <div>
-            <dt>Organization type</dt>
-            <dd>
-              Higher-education fundraising organization
-            </dd>
-          </div>
 
           <div>
             <dt>Business problem</dt>
@@ -227,7 +249,7 @@
           </div>
 
           <div>
-            <dt>What I investigated</dt>
+            <dt>Investigation</dt>
             <dd>
               Business requirements, reporting definitions, Salesforce object
               relationships, available fields, report types, filters, formulas,
@@ -237,7 +259,7 @@
           </div>
 
           <div>
-            <dt>What I found</dt>
+            <dt>Finding</dt>
             <dd>
               Some reporting requests depended on more than report
               configuration. They also required clarification of business
@@ -265,8 +287,8 @@
             </dd>
           </div>
 
-          <div>
-            <dt>Technologies</dt>
+          <div class="project-systems">
+            <dt>Relevant systems</dt>
             <dd>
               Salesforce, Salesforce Education Cloud and advancement data,
               reports, dashboards, report types, formulas, and related
@@ -282,22 +304,19 @@
 
       <article class="project-example">
 
-        <p class="project-year">
-          2025
-        </p>
+        <div class="project-meta">
+          <p class="project-year">2025</p>
 
-        <h3>
-          Salesforce Data Quality &amp; Governance
-        </h3>
+          <h3>
+            Salesforce Data Quality &amp; Governance
+          </h3>
+
+          <p class="project-organization">
+            Consumer-products organization
+          </p>
+        </div>
 
         <dl class="project-details">
-
-          <div>
-            <dt>Organization type</dt>
-            <dd>
-              Consumer-products organization
-            </dd>
-          </div>
 
           <div>
             <dt>Business problem</dt>
@@ -309,7 +328,7 @@
           </div>
 
           <div>
-            <dt>What I investigated</dt>
+            <dt>Investigation</dt>
             <dd>
               Duplicate patterns, record creation processes, imports, field
               consistency, normalization requirements, user workflows, and
@@ -337,8 +356,8 @@
             </dd>
           </div>
 
-          <div>
-            <dt>Technologies</dt>
+          <div class="project-systems">
+            <dt>Relevant systems</dt>
             <dd>
               Salesforce, CRM data-quality processes, duplicate management,
               normalization, validation, reporting, and data governance
@@ -353,22 +372,19 @@
 
       <article class="project-example">
 
-        <p class="project-year">
-          2025
-        </p>
+        <div class="project-meta">
+          <p class="project-year">2025</p>
 
-        <h3>
-          Product Data &amp; Digital Asset Automation
-        </h3>
+          <h3>
+            Product Data &amp; Digital Asset Automation
+          </h3>
+
+          <p class="project-organization">
+            Consumer-products organization
+          </p>
+        </div>
 
         <dl class="project-details">
-
-          <div>
-            <dt>Organization type</dt>
-            <dd>
-              Consumer-products organization
-            </dd>
-          </div>
 
           <div>
             <dt>Business problem</dt>
@@ -381,7 +397,7 @@
           </div>
 
           <div>
-            <dt>What I investigated</dt>
+            <dt>Investigation</dt>
             <dd>
               Product information workflows, digital asset management,
               metadata, taxonomy, syndication, source systems, integrations,
@@ -408,8 +424,8 @@
             </dd>
           </div>
 
-          <div>
-            <dt>Technologies</dt>
+          <div class="project-systems">
+            <dt>Relevant systems</dt>
             <dd>
               Acquia Widen DAM, Syndigo, 1WorldSync, Python, product
               information systems, digital asset management, integrations, and
@@ -425,22 +441,19 @@
 
       <article class="project-example">
 
-        <p class="project-year">
-          2021
-        </p>
+        <div class="project-meta">
+          <p class="project-year">2021</p>
 
-        <h3>
-          Enterprise Reporting Modernization
-        </h3>
+          <h3>
+            Enterprise Reporting Modernization
+          </h3>
+
+          <p class="project-organization">
+            Consumer-products organization
+          </p>
+        </div>
 
         <dl class="project-details">
-
-          <div>
-            <dt>Organization type</dt>
-            <dd>
-              Consumer-products organization
-            </dd>
-          </div>
 
           <div>
             <dt>Business problem</dt>
@@ -460,7 +473,7 @@
           </div>
 
           <div>
-            <dt>What I investigated</dt>
+            <dt>Investigation</dt>
             <dd>
               Existing Oracle reports, business reporting requirements,
               source-system data, report usage, data transformations, and how
@@ -488,8 +501,8 @@
             </dd>
           </div>
 
-          <div>
-            <dt>Technologies</dt>
+          <div class="project-systems">
+            <dt>Relevant systems</dt>
             <dd>
               Oracle reporting, Tableau, business intelligence, data
               pipelines, and enterprise reporting systems
@@ -502,23 +515,27 @@
 
     </section>
 
-    <section class="page-cta" aria-labelledby="projects-contact-title">
+    <section class="projects-cta" aria-labelledby="projects-contact-title">
 
-      <h2 id="projects-contact-title">
-        Have a similar problem?
-      </h2>
+      <div>
+        <h2 id="projects-contact-title">
+          Have a similar problem?
+        </h2>
+      </div>
 
-      <p>
-        If your reporting, data, measurement, or digital systems are producing
-        information your team does not trust, tell me what is happening and
-        what you are trying to accomplish.
-      </p>
+      <div class="projects-cta-copy">
+        <p>
+          If your reporting, data, measurement, or digital systems are producing
+          information your team does not trust, tell me what is happening and
+          what you are trying to accomplish.
+        </p>
 
-      <p>
-        <a class="cta-link" href="contact.html">
-          Contact Jack
-        </a>
-      </p>
+        <p>
+          <a class="cta-link" href="contact.html">
+            Contact Jack
+          </a>
+        </p>
+      </div>
 
     </section>
 
@@ -526,11 +543,31 @@
 
   <footer class="site-footer">
 
-    <p>
-      &copy; 2026 Jack Tyler. Operated through Unified Stack.
-    </p>
+  <p class="footer-copyright">
+    &copy; 2026 Jack Tyler. Operated through Unified Stack.
+  </p>
 
-  </footer>
+  <nav class="footer-nav" aria-label="Footer navigation">
+
+    <ul class="footer-nav-column">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Jack</a></li>
+      <li><a href="previous-projects.html">Previous Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+
+    <ul class="footer-nav-column">
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="sitemap.html">Sitemap</a></li>
+    </ul>
+
+  </nav>
+
+</footer>
 
 </body>
 

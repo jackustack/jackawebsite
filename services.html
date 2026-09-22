@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+<body class="services-page">
 
   <!-- Google Tag Manager (noscript) -->
   <noscript>
@@ -76,24 +76,31 @@
 
   <main id="main-content" tabindex="-1">
 
-    <section id="top" class="page-intro" aria-labelledby="page-title">
-    
-      <h1 id="page-title">Services</h1>
-    
-      <p class="page-intro-summary">
-        Specific help for business problems involving data, measurement,
-        reporting, accessibility, product information, and ongoing marketing
-        and revenue operations.
-      </p>
-    
-      <p class="services-intro-cta">
-        <a href="contact.html" class="cta-link">Discuss your project</a>
-      </p>
-    
-    </section>
-    <section class="service-list" aria-labelledby="core-services-title">
+    <section id="top" class="page-intro services-hero" aria-labelledby="page-title">
 
-      <h2 id="core-services-title">Core services</h2>
+      <div class="services-hero-heading">
+        <h1 id="page-title">Services</h1>
+      </div>
+
+      <div class="services-hero-copy">
+        <p class="page-intro-summary">
+          Specific help for business problems involving data, measurement,
+          reporting, accessibility, product information, and ongoing marketing
+          and revenue operations.
+        </p>
+
+        <p class="services-intro-cta">
+          <a href="contact.html" class="cta-link">Discuss your project</a>
+        </p>
+      </div>
+
+    </section>
+
+    <section class="service-list services-core" aria-labelledby="core-services-title">
+
+      <div class="service-section-heading">
+        <h2 id="core-services-title">Core services</h2>
+      </div>
 
       <section id="service-data-quality" class="service-item" aria-labelledby="service-data-quality-title">
 
@@ -146,7 +153,8 @@
 
       </section>
 
-      <section id="service-accessibility" class="service-item" aria-labelledby="service-accessibility-title">
+      <section id="service-accessibility" class="service-item service-item-accessibility"
+        aria-labelledby="service-accessibility-title">
 
         <div class="service-heading">
           <h3 id="service-accessibility-title">
@@ -159,30 +167,21 @@
           </p>
         </div>
 
-        <div class="service-content">
+        <p class="service-description">
+          Focused accessibility review, keyboard testing, common accessibility
+          barriers, remediation, retesting, and implementation support for
+          identified issues.
+        </p>
 
-          <p class="service-description">
-            Focused accessibility review, keyboard testing, common accessibility
-            barriers, remediation, retesting, and implementation support for
-            identified issues.
-          </p>
-
-          <p class="service-pricing">
-            <strong>
-              Accessibility Essentials from $950.</strong>
-            <br><small>
-              This is not a comprehensive WCAG conformance audit, legal certification,
-              or guarantee against a complaint or lawsuit. For comprehensive WCAG audits, formal documentation, or
-              larger
-              remediation projects, I can coordinate work with specialist
-              accessibility partners that I have vetted.</small>
-
-          </p>
-
-          <p class="service-note">
-          </p>
-
-        </div>
+        <p class="service-pricing">
+          <strong>Accessibility Essentials from $950.</strong>
+          <small class="service-disclaimer">
+            This is not a comprehensive WCAG conformance audit, legal certification,
+            or guarantee against a complaint or lawsuit. For comprehensive WCAG audits,
+            formal documentation, or larger remediation projects, I can coordinate work
+            with specialist accessibility partners that I have vetted.
+          </small>
+        </p>
 
       </section>
 
@@ -241,11 +240,13 @@
 
     </section>
 
-    <section class="service-list" aria-labelledby="additional-services-title">
+    <section class="service-list ongoing-services" aria-labelledby="additional-services-title">
 
-      <h2 id="additional-services-title">
-        Strategy and ongoing support
-      </h2>
+      <div class="service-section-heading">
+        <h2 id="additional-services-title">
+          Strategy and ongoing support
+        </h2>
+      </div>
 
       <section id="service-fractional" class="service-item" aria-labelledby="service-fractional-title">
 
@@ -276,33 +277,41 @@
     </section>
 
     <section class="how-i-work-summary" aria-labelledby="how-i-work-title">
-  <h2 id="how-i-work-title">How I work</h2>
 
-  <p>
-    Projects start with a clear scope and useful deliverables. I try to
-    understand the business process before changing the system, and the
-    documentation and findings stay with your team.
-  </p>
+      <div class="how-i-work-heading">
+        <h2 id="how-i-work-title">How I work</h2>
+      </div>
 
-  <p>
-    If a smaller fix solves the problem, I will recommend the smaller fix.
-  </p>
+      <div class="how-i-work-copy">
+        <p>
+          Projects start with a clear scope and useful deliverables. I try to
+          understand the business process before changing the system, and the
+          documentation and findings stay with your team.
+        </p>
 
-  <p>
-    <a href="about.html#how-i-work">Learn more about how I work →</a>
-  </p>
-</section>
+        <p>
+          If a smaller fix solves the problem, I will recommend the smaller fix.
+        </p>
+
+        <p class="how-i-work-link">
+          <a href="about.html#how-i-work">Learn more about how I work →</a>
+        </p>
+      </div>
+
+    </section>
 
     <section id="contact" class="contact-cta" aria-labelledby="contact-title">
 
-      <h2 id="contact-title">
-        Not sure which service fits?
-      </h2>
+      <div class="contact-cta-copy">
+        <h2 id="contact-title">
+          Not sure which service fits?
+        </h2>
 
-      <p>
-        Describe the business problem, what it is affecting, and what you need to
-        accomplish. You do not need to diagnose the technical cause first.
-      </p>
+        <p>
+          Describe the business problem, what it is affecting, and what you need to
+          accomplish. You do not need to diagnose the technical cause first.
+        </p>
+      </div>
 
       <address class="contact-address">
         <a href="contact.html">Contact me</a>
@@ -313,10 +322,32 @@
   </main>
 
   <footer class="site-footer">
-    <p>
-      &copy; 2026 Jack Tyler. Operated through Unified Stack.
-    </p>
-  </footer>
+
+  <p class="footer-copyright">
+    &copy; 2026 Jack Tyler. Operated through Unified Stack.
+  </p>
+
+  <nav class="footer-nav" aria-label="Footer navigation">
+
+    <ul class="footer-nav-column">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Jack</a></li>
+      <li><a href="previous-projects.html">Previous Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+
+    <ul class="footer-nav-column">
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="sitemap.html">Sitemap</a></li>
+    </ul>
+
+  </nav>
+
+</footer>
 
 </body>
 
