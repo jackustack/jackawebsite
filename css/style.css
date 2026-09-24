@@ -1327,8 +1327,10 @@ textarea:focus-visible {
 @media (max-width: 480px) {
 
   .home-page .primary-nav {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 20px;
   }
 
   .home-page .site-description span {
@@ -3610,25 +3612,35 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 
+
+/* ---------------------------------------------------------
+   Mobile footer
+   Navigation first, always two columns
+   --------------------------------------------------------- */
+
 @media (max-width: 760px) {
+
   .site-footer {
     width: calc(100% - 36px);
     flex-direction: column;
-    gap: 18px;
+    align-items: stretch;
+    gap: 24px;
   }
 
   .footer-nav {
+    order: 1;
     width: 100%;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px 28px;
   }
-}
 
-@media (max-width: 480px) {
-  .footer-nav {
-    grid-template-columns: 1fr;
-    gap: 8px;
+  .footer-copyright {
+    order: 2;
+    width: 100%;
+    padding-top: 18px;
+    border-top: 1px solid #aeb9c8;
   }
+
 }
 
 /* =========================================================
@@ -4072,4 +4084,25 @@ textarea:focus-visible {
   .privacy-page .site-search {
     align-items: stretch;
   }
+}
+
+/* =========================================================
+   Shared mobile navigation
+   Keep primary navigation horizontal on small screens
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .home-page .primary-nav,
+  .services-page .primary-nav,
+  .contact-page .primary-nav,
+  .about-page .primary-nav,
+  .projects-page .primary-nav,
+  .privacy-page .primary-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 20px;
+  }
+
 }
